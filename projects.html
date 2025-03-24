@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Projects by James Gregory Walsh – Research, analytics, and public safety initiatives." />
   <meta name="author" content="James Gregory Walsh" />
-  <meta name="keywords" content="James Gregory Walsh, projects, public safety, law enforcement, analytics, research" />
-  
+  <meta name="keywords" content="James Gregory Walsh, projects, law enforcement, analytics, research" />
   <title>Projects – James Gregory Walsh</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header>
     <h1>James Gregory Walsh (Greg)</h1>
@@ -23,45 +22,61 @@
         <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button id="darkToggle" class="btn">Toggle Dark Mode</button>
     </nav>
   </header>
 
   <main class="container">
-    <section id="projects">
+    <section id="projects" class="reveal">
       <h2>Selected Projects</h2>
 
-      <article>
-        <h3>Crime Pattern Mapping – Albany, NY</h3>
-        <p>
-          Developed a prototype system to visualize high-crime zones using census block data and local arrest records. Integrated predictive algorithms to assess incident probability. Tools used: <strong>R, SPSS, QGIS</strong>.
-        </p>
-      </article>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Crime Pattern Mapping</h3>
+          <p>Visualizing high-crime zones using census block data and local arrest records. Tools: R, SPSS, QGIS.</p>
+        </div>
 
-      <article>
-        <h3>Behavioral Health Response Model</h3>
-        <p>
-          Created an interdisciplinary escalation protocol to improve outcomes in psychiatric crisis scenarios. Designed training material for social workers, law enforcement, and hospital staff to improve rapid assessment and team coordination.
-        </p>
-      </article>
+        <div class="card">
+          <h3>Behavioral Health Response Model</h3>
+          <p>Escalation protocol developed for use in psychiatric emergencies and interdisciplinary response teams.</p>
+        </div>
 
-      <article>
-        <h3>Albany Watch – Crime Data & Surveillance</h3>
-        <p>
-          Developed and currently maintain <a href="https://crime.albany.watch/" target="_blank" rel="noopener noreferrer">Albany Watch</a>, a public-facing site providing interactive crime data visualization, predictive mapping, and incident tracking across the Capital Region.
-        </p>
-      </article>
+        <div class="card">
+          <h3>Albany Watch</h3>
+          <p><a href="https://crime.albany.watch" target="_blank" rel="noopener noreferrer">Albany Watch</a>: Live surveillance and predictive crime mapping system.</p>
+        </div>
 
-      <article>
-        <h3>Case Study Repository (Coming Soon)</h3>
-        <p>
-          I am compiling a portfolio of anonymized reports showcasing behavioral assessments, security evaluations, and applied psychometric models for public safety and investigative environments.
-        </p>
-      </article>
+        <div class="card">
+          <h3>Case Study Repository (Coming Soon)</h3>
+          <p>An anonymized archive of behavioral assessments, clinical evaluations, and criminal risk profiles.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    reveals.forEach(section => {
+      section.classList.remove('reveal');
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
