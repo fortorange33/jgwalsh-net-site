@@ -78,6 +78,13 @@ nav li a:focus {
   color: #ecf0f1;
 }
 
+/* Active nav link styling */
+nav li a.active,
+nav li a[aria-current="page"] {
+  background-color: #1a252f;
+  color: #ffffff;
+}
+
 /* ========== MAIN CONTENT ========== */
 main {
   max-width: 1000px;
@@ -92,7 +99,8 @@ main {
 }
 
 #welcome,
-#highlights {
+#highlights,
+#projects {
   padding: 1rem 0;
 }
 
@@ -118,6 +126,23 @@ section p {
 ul,
 ol {
   margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ========== PROJECTS (Article Block) ========== */
+article {
+  margin-bottom: 2rem;
+}
+
+article h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  margin-left: 0;
+  padding-left: 0;
   margin-bottom: 1rem;
 }
 
