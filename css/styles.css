@@ -43,24 +43,28 @@ a:focus {
 
 /* HEADER */
 header {
-  background: linear-gradient(90deg, #0f172a, #1e293b);
-  color: white;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  border-bottom: 4px solid #0ea5e9;
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 999;
 }
 
 header h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
   margin-bottom: 0.25rem;
+  text-align: center;
 }
 
 header p {
-  font-weight: 300;
-  color: #e2e8f0;
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 nav ul {
@@ -69,13 +73,14 @@ nav ul {
   flex-wrap: wrap;
   list-style: none;
   gap: 1.25rem;
-  margin-top: 1rem;
+  margin: 0 auto;
+  padding-left: 0;
 }
 
 nav li a {
-  color: #cbd5e1;
-  padding: 0.5rem 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  color: #374151;
+  padding: 0.5rem 0.75rem;
   border-bottom: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
@@ -83,8 +88,8 @@ nav li a {
 nav li a:hover,
 nav li a.active,
 nav li a[aria-current="page"] {
-  border-color: #0ea5e9;
-  color: #ffffff;
+  border-color: #2563eb;
+  color: #2563eb;
 }
 
 /* MAIN LAYOUT */
@@ -151,12 +156,12 @@ ol {
 
 /* FOOTER */
 footer {
-  background-color: #0f172a;
-  color: #cbd5e1;
+  background-color: #ffffff;
+  color: #6b7280;
   text-align: center;
   padding: 1.25rem;
   font-size: 0.875rem;
-  border-top: 3px solid #0ea5e9;
+  border-top: 2px solid #e5e7eb;
 }
 
 /* RESPONSIVE */
