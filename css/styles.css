@@ -1,6 +1,9 @@
-/* ========== MODERNIZED STYLES FOR JAMES GREGORY WALSH PORTFOLIO ========== */
+/* ==========================================================================
+   MODERN PROFESSIONAL STYLESHEET – JAMES GREGORY WALSH
+   ==========================================================================
+*/
 
-/* ========== RESET ========== */
+/* RESET & BASE STYLES */
 * {
   margin: 0;
   padding: 0;
@@ -9,112 +12,119 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  background-color: #f5f7fa;
-  color: #2c3e50;
-  font-size: 16px;
-  line-height: 1.7;
+  font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+  line-height: 1.75;
+  overflow-x: hidden;
 }
 
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 a {
-  color: #0056b3;
+  color: #2563eb;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover,
 a:focus {
   text-decoration: underline;
+  color: #1d4ed8;
 }
 
-/* ========== HEADER ========== */
+/* HEADER */
 header {
-  background-color: #ffffff;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #e1e4e8;
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  color: white;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  border-bottom: 4px solid #0ea5e9;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 header h1 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 0.2rem;
-  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 0.25rem;
 }
 
 header p {
   font-weight: 300;
-  font-size: 1rem;
-  color: #666;
-  text-align: center;
+  color: #e2e8f0;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  flex-wrap: wrap;
   list-style: none;
+  gap: 1.25rem;
   margin-top: 1rem;
-  padding-left: 0;
 }
 
 nav li a {
-  padding: 0.5rem 0.75rem;
-  font-weight: 600;
+  color: #cbd5e1;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
   border-bottom: 2px solid transparent;
-  color: #2c3e50;
+  transition: border-color 0.3s ease;
 }
 
 nav li a:hover,
 nav li a.active,
 nav li a[aria-current="page"] {
-  border-color: #0056b3;
-  color: #0056b3;
+  border-color: #0ea5e9;
+  color: #ffffff;
 }
 
-/* ========== LAYOUT ========== */
+/* MAIN LAYOUT */
 .container {
   max-width: 960px;
-  margin: 2rem auto;
+  margin: 3rem auto;
   padding: 0 1rem;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 section h2 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  border-left: 4px solid #0056b3;
+  font-size: 1.75rem;
+  margin-bottom: 1.25rem;
+  border-left: 6px solid #0ea5e9;
   padding-left: 0.75rem;
-  color: #2c3e50;
+  color: #1e293b;
+  text-transform: uppercase;
 }
 
 article {
   margin-bottom: 2rem;
+  background-color: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
 }
 
 article h3 {
   font-size: 1.25rem;
-  color: #003366;
+  color: #0f172a;
   margin-bottom: 0.5rem;
 }
 
 article p,
 article ul {
   margin-bottom: 1rem;
+  color: #374151;
 }
 
 ul,
@@ -122,47 +132,47 @@ ol {
   padding-left: 1.25rem;
 }
 
-/* ========== BUTTONS ========== */
+/* BUTTONS */
 .btn {
   display: inline-block;
-  background-color: #0056b3;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  font-weight: bold;
-  border-radius: 4px;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.6rem 1.25rem;
+  font-weight: 600;
+  border-radius: 5px;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .btn:hover {
-  background-color: #003f88;
+  background-color: #1d4ed8;
 }
 
-/* ========== FOOTER ========== */
+/* FOOTER */
 footer {
-  background-color: #ffffff;
-  border-top: 1px solid #e1e4e8;
+  background-color: #0f172a;
+  color: #cbd5e1;
   text-align: center;
-  padding: 1rem;
+  padding: 1.25rem;
   font-size: 0.875rem;
-  color: #666;
-  margin-top: 3rem;
+  border-top: 3px solid #0ea5e9;
 }
 
-/* ========== RESPONSIVE ========== */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   nav ul {
     flex-direction: column;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.75rem;
   }
 
   section h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   article h3 {
