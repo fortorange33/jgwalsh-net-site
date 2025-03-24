@@ -9,6 +9,7 @@
 
   <title>James Gregory Walsh – Professional Portfolio</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,12 +24,20 @@
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button id="darkToggle" class="btn">Toggle Dark Mode</button>
     </nav>
   </header>
 
-	
+  <section class="hero">
+    <div class="hero-content container">
+      <h2 class="hero-title">Public Safety. Clinical Insight. Data-Driven Decisions.</h2>
+      <p class="hero-subtitle">Integrating behavioral science and law enforcement analysis for meaningful impact.</p>
+      <a href="projects.html" class="btn">View Projects</a>
+    </div>
+  </section>
+
   <main class="container">
-    <section id="welcome">
+    <section id="welcome" class="reveal">
       <h2>Welcome</h2>
       <p>
         Welcome to <strong>jgwalsh.net</strong>, the official professional portfolio of <strong>James Gregory Walsh</strong> (Greg). I combine over five years of clinical experience in mental health counseling with a strong analytical skill set focused on public safety, behavioral assessment, and data-driven decision-making. I am currently transitioning into federal or state law enforcement.
@@ -36,12 +45,9 @@
       <p>
         My work has centered on crisis intervention, interdisciplinary collaboration, and behavioral risk assessment, often involving psychiatrists, psychologists, and social workers in acute inpatient settings. Complemented by graduate training in clinical psychology and advanced data analytics using tools like SPSS, R, and Excel, I bring both human and technical insight to the field of public safety and law enforcement.
       </p>
-      <p>
-        Please explore the pages above to learn more about my qualifications, review selected <a href="projects.html">projects</a>, and <a href="contact.html">get in touch</a> if you'd like to connect.
-      </p>
     </section>
 
-    <section id="highlights">
+    <section id="highlights" class="reveal">
       <h2>Key Competencies</h2>
       <ul>
         <li>Crisis intervention and de-escalation</li>
@@ -56,5 +62,30 @@
   <footer>
     <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+
+    // Scroll reveal animation
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('reveal');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    reveals.forEach(section => {
+      section.classList.remove('reveal');
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
