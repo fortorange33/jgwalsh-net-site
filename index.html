@@ -17,7 +17,12 @@
     <h1>James Gregory Walsh (Greg)</h1>
     <p>Professional Portfolio</p>
     <nav>
-      <ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu hidden">
         <li><a href="index.html" class="active" aria-current="page">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="experience.html">Experience</a></li>
@@ -75,7 +80,7 @@
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
+          entry.target.classList.add('visible');
         }
       });
     }, {
@@ -87,5 +92,6 @@
       observer.observe(section);
     });
   </script>
+  <script src="js/menu.js"></script>
 </body>
 </html>
