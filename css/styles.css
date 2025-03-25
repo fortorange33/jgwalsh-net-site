@@ -18,8 +18,8 @@ html {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  color: #1f2937;
-  background-color: #f9fafb;
+  color: #2F2F2F;
+  background: linear-gradient(to bottom, #8A7F8D 0%, #FFFFFF 100%);
   line-height: 1.75;
   overflow-x: hidden;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -32,7 +32,7 @@ img {
 }
 
 a {
-  color: #2563eb;
+  color: #3D5A4D;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
@@ -40,12 +40,12 @@ a {
 a:hover,
 a:focus {
   text-decoration: underline;
-  color: #1d4ed8;
+  color: #C9A96E;
 }
 
 /* HEADER */
 header {
-  background-color: #ffffff;
+  background-color: #3D5A4D;
   padding: 1.5rem 2rem;
   border-bottom: 2px solid #e5e7eb;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -59,7 +59,7 @@ header {
 header h1 {
   font-size: 2rem;
   font-weight: 700;
-  color: #111827;
+  color: #ffffff;
   margin-bottom: 0.25rem;
 }
 
@@ -89,8 +89,8 @@ nav li a {
 nav li a:hover,
 nav li a.active,
 nav li a[aria-current="page"] {
-  border-color: #2563eb;
-  color: #2563eb;
+  border-color: #C9A96E;
+  color: #C9A96E;
 }
 
 /* HERO SECTION */
@@ -154,7 +154,7 @@ ol {
 /* BUTTONS */
 .btn {
   display: inline-block;
-  background-color: #2563eb;
+  background-color: #3D5A4D;
   color: #ffffff;
   padding: 0.6rem 1.25rem;
   font-weight: 600;
@@ -165,13 +165,13 @@ ol {
 }
 
 .btn:hover {
-  background-color: #1d4ed8;
+  background-color: #2c4539;
 }
 
 /* FOOTER */
 footer {
-  background-color: #ffffff;
-  color: #6b7280;
+  background-color: #7B6D78;
+  color: #ffffff;
   text-align: center;
   padding: 1.25rem;
   font-size: 0.875rem;
@@ -247,6 +247,12 @@ textarea:required:valid {
 
   #darkToggle {
     margin-top: 0.75rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-title {
