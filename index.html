@@ -1,59 +1,57 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio of James Gregory Walsh — integrating psychology, behavioral science, and law enforcement readiness." />
+  <meta name="author" content="James Gregory Walsh" />
+  <meta name="keywords" content="James Gregory Walsh, Greg Walsh, portfolio, law enforcement, behavioral analysis, mental health, public safety, SPSS, R, threat assessment" />
+
   <title>James Gregory Walsh – Professional Portfolio</title>
 
-  <!-- Tailwind CSS from CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <!-- Tailwind CSS (production-safe CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-  <!-- Your custom styles -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- ✅ Google Font: Inter -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
+    body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
 
 <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-  <header>
-    <h1>James Gregory Walsh (Greg)</h1>
-    <p>Professional Portfolio</p>
-    <nav>
-      <div class="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+  <header class="border-b dark:border-gray-700 py-4 px-6 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-bold">James Gregory Walsh (Greg)</h1>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Professional Portfolio</p>
       </div>
-      <ul class="nav-menu hidden">
-        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button id="darkToggle" class="btn">Toggle Dark Mode</button>
-    </nav>
+      <nav class="mt-4 md:mt-0 flex items-center gap-4">
+        <ul class="flex flex-col md:flex-row gap-4">
+          <li><a href="index.html" class="text-blue-600 underline">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkToggle" class="ml-4 px-3 py-1 text-sm bg-gray-200 dark:bg-gray-700 rounded">Toggle Dark Mode</button>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero">
-    <div class="hero-content container">
-      <h2 class="hero-title">Behavioral Science. Law Enforcement Readiness. Impactful Service.</h2>
-      <p class="hero-subtitle">Integrating behavioral science and law enforcement analysis for meaningful impact.</p>
-      <a href="projects.html" class="btn">View Projects</a>
+  <section class="py-20 bg-gray-100 dark:bg-gray-800 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Public Safety. Clinical Insight. Data-Driven Decisions.</h2>
+      <p class="text-lg text-gray-700 dark:text-gray-300 mb-6">Integrating behavioral science and law enforcement analysis for meaningful impact.</p>
+      <a href="projects.html" class="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded hover:bg-blue-700">View Projects</a>
     </div>
   </section>
 
-  <main class="container">
-    <section id="welcome" class="reveal">
-      <h2>Welcome</h2>
-      <p>
+  <main class="max-w-4xl mx-auto px-4 py-12 space-y-16">
+    <section id="welcome">
+      <h2 class="text-2xl font-bold mb-4">Welcome</h2>
+      <p class="mb-4">
         Welcome to <strong>jgwalsh.net</strong>, the official professional portfolio of <strong>James Gregory Walsh</strong> (Greg). I combine over five years of clinical experience in mental health counseling with a strong analytical skill set focused on public safety, behavioral assessment, and data-driven decision-making. I am currently transitioning into federal or state law enforcement.
       </p>
       <p>
@@ -61,9 +59,9 @@
       </p>
     </section>
 
-    <section id="highlights" class="reveal">
-      <h2>Key Competencies</h2>
-      <ul>
+    <section id="highlights">
+      <h2 class="text-2xl font-bold mb-4">Key Competencies</h2>
+      <ul class="list-disc pl-5 space-y-2">
         <li>Crisis intervention and de-escalation</li>
         <li>Behavioral threat assessment and evaluation</li>
         <li>Interdisciplinary collaboration in clinical settings</li>
@@ -73,8 +71,8 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+  <footer class="bg-gray-50 dark:bg-gray-800 border-t dark:border-gray-700 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+    &copy; 2025 James Gregory Walsh. All rights reserved.
   </footer>
 
   <script>
@@ -82,31 +80,7 @@
     const toggle = document.getElementById('darkToggle');
     toggle.addEventListener('click', () => {
       document.documentElement.classList.toggle('dark');
-      localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
-    });
-
-    // Persist dark mode preference
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
-    }
-
-    // Scroll reveal animation
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
-
-    reveals.forEach(section => {
-      section.classList.remove('reveal');
-      observer.observe(section);
     });
   </script>
-  <script src="js/menu.js"></script>
 </body>
 </html>
