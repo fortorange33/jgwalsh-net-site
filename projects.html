@@ -3,87 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projects by James Gregory Walsh – Research, analytics, and public safety initiatives." />
-  <meta name="author" content="James Gregory Walsh" />
-  <meta name="keywords" content="James Gregory Walsh, projects, law enforcement, analytics, research" />
-  <title>Projects – James Gregory Walsh</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="Projects by James Gregory Walsh – data analysis, applied psychology, and law enforcement innovation." />
+  <title>Projects | James Gregory Walsh</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="assets/css/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
 </head>
-<body>
-  <header>
-    <h1>James Gregory Walsh (Greg)</h1>
-    <p>Professional Portfolio</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <button id="darkToggle" class="btn">Toggle Dark Mode</button>
-    </nav>
+
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+  <header class="border-b dark:border-gray-700 py-4 px-6 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <h1 class="text-2xl font-bold">James Gregory Walsh (Greg)</h1>
+        <p class="text-sm text-gray-600 dark:text-gray-400">Professional Portfolio</p>
+      </div>
+      <nav class="mt-4 md:mt-0 flex items-center gap-4">
+        <ul class="flex flex-col md:flex-row gap-4">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="projects.html" class="text-blue-600 underline">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button id="darkToggle" class="ml-4 px-3 py-1 text-sm bg-gray-200 dark:bg-gray-700 rounded">Toggle Dark Mode</button>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section id="projects" class="reveal">
-      <h2>Selected Projects</h2>
+  <main class="max-w-4xl mx-auto px-4 py-12 space-y-16">
+    <section>
+      <h2 class="text-3xl font-semibold mb-4">Selected Projects</h2>
+      <p class="mb-8 text-lg">The projects below represent my applied work in behavioral analysis, law enforcement data visualization, and analytical problem-solving. Each integrates elements of psychological insight, statistical modeling, and operational relevance.</p>
 
-      <div class="card-grid">
-        <div class="card">
-          <h3>Crime Pattern Mapping</h3>
-          <p>Visualizing high-crime zones using census block data and local arrest records. Tools: R, SPSS, QGIS.</p>
+      <div class="space-y-10">
+        <div>
+          <h3 class="text-xl font-bold">Albany Aegis Initiative</h3>
+          <p class="text-sm text-gray-500">2024 – Ongoing</p>
+          <p class="mt-2">A civic-focused initiative designed to integrate behavioral psychology, predictive modeling, and law enforcement strategy to enhance community resilience in Albany, NY.</p>
+          <p class="mt-1"><strong>Tools:</strong> SPSS, R, ACS Data, Tailwind CSS</p>
         </div>
 
-        <div class="card">
-          <h3>Behavioral Health Response Model</h3>
-          <p>Escalation protocol developed for use in psychiatric emergencies and interdisciplinary response teams.</p>
+        <div>
+          <h3 class="text-xl font-bold">Law Enforcement Transition Model</h3>
+          <p class="text-sm text-gray-500">2023</p>
+          <p class="mt-2">Developed a structured framework outlining career transition from clinical psychology to investigative roles within federal and state law enforcement. Grounded in operational psychology and analytic reasoning.</p>
+          <p class="mt-1"><strong>Tools:</strong> Research synthesis, applied psychology, data visualization</p>
         </div>
 
-        <div class="card">
-          <h3>Albany Watch</h3>
-          <p><a href="https://crime.albany.watch" target="_blank" rel="noopener noreferrer">Albany Watch</a>: Live surveillance and predictive crime mapping system.</p>
-        </div>
-
-        <div class="card">
-          <h3>Case Study Repository (Coming Soon)</h3>
-          <p>An anonymized archive of behavioral assessments, clinical evaluations, and criminal risk profiles.</p>
-        </div>
-
-        <div class="card">
-          <h3>Psyber Nexus</h3>
-          <p>2024 – Concept Development</p>
-          <p>An evolving platform exploring the intersection of psychology, digital systems, and applied intelligence. Psyber Nexus investigates frameworks for human-technology interaction, behavioral modeling, and cognitive infrastructure. See more at <a href="https://psybernexus.com" target="_blank" rel="noopener noreferrer">psybernexus.com</a> and <a href="https://psyber.nexus" target="_blank" rel="noopener noreferrer">psyber.nexus</a>.</p>
-          <p><strong>Focus Areas:</strong> Psychological systems theory, network cognition, cybernetics, identity models</p>
+        <div>
+          <h3 class="text-xl font-bold">SPSS-Based Behavioral Risk Assessment Framework</h3>
+          <p class="text-sm text-gray-500">2022</p>
+          <p class="mt-2">Built an SPSS-based framework to structure, score, and visualize behavioral risk indicators drawn from clinical settings. Adaptable for pre-screening, monitoring, or post-incident review.</p>
+          <p class="mt-1"><strong>Tools:</strong> SPSS, case coding, descriptive stats, visual analytics</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+  <footer class="bg-gray-50 dark:bg-gray-800 border-t dark:border-gray-700 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+    &copy; 2025 James Gregory Walsh. All rights reserved.
   </footer>
 
   <script>
     const toggle = document.getElementById('darkToggle');
     toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    reveals.forEach(section => {
-      section.classList.remove('reveal');
-      observer.observe(section);
+      document.documentElement.classList.toggle('dark');
     });
   </script>
 </body>
