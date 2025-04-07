@@ -1,42 +1,60 @@
-# James Gregory Walsh – Professional Portfolio
+# James Gregory Walsh — Professional Portfolio
 
 **Live Site:** [https://jgwalsh.net](https://jgwalsh.net)
 
-This repository contains the source files for the professional portfolio of **James Gregory Walsh** (Greg), a clinician and analyst with a background in psychology, behavioral risk assessment, and data-supported law enforcement readiness. The portfolio showcases key projects, professional competencies, and contact information for prospective employers or collaborators.
+This repository contains the source code and content for **jgwalsh.net**, the professional portfolio of James Gregory Walsh. The site presents a summary of professional experience, academic training, and relevant projects in psychology, behavioral analysis, and law enforcement readiness.
+
+The portfolio is designed as a static website and deployed via Cloudflare Pages. It provides structured access to qualifications, work history, project work, and contact information.
+
+---
+
+## Summary
+
+James Gregory Walsh has over three years of experience as a mental health specialist at McLean Hospital (McLean-Franciscan unit), a psychiatric hospital affiliated with Harvard Medical School. His responsibilities included clinical assessment, crisis intervention, and collaboration with interdisciplinary teams in acute psychiatric settings.
+
+His academic background spans undergraduate and graduate-level training in applied psychology, with advanced capabilities in data analysis and behavioral evaluation using SPSS, R, and Excel. The experience and skills reflected in this portfolio underscore his transition from clinical roles to investigative and analytical positions in law enforcement.
+
+---
+
+## Core Competencies
+
+- Behavioral Assessment and Clinical Decision-Making
+- Interdisciplinary Team Collaboration
+- Statistical and Quantitative Analysis (SPSS, R, Excel)
+- Applied Psychology and Behavioral Research
+- Critical Thinking and Analytical Problem-Solving
+
+---
+
+## Project Overview
+
+This portfolio includes:
+
+- A concise professional biography
+- Detailed experience from clinical and psychiatric environments
+- Integration of applied psychological skills into data-driven projects
+- Civic and research-based initiatives relevant to law enforcement and public service
+
+---
+
+## Technologies Used
+
+- HTML5, CSS3 (Tailwind CSS)
+- Git and GitHub for version control
+- Cloudflare Pages for deployment
+- Visual Studio Code and Dreamweaver for development
+- SPSS, R, and Excel (in referenced analytical work)
 
 ---
 
 ## Quick Links
 
 - [Homepage](https://jgwalsh.net)
-- [About Me](https://jgwalsh.net/about.html)
+- [About](https://jgwalsh.net/about.html)
 - [Experience](https://jgwalsh.net/experience.html)
 - [Projects](https://jgwalsh.net/projects.html)
 - [Contact](https://jgwalsh.net/contact.html)
-- [Albany Watch (external)](https://crime.albany.watch)
-
----
-
-## Project Overview
-
-This is a static website deployed with **Cloudflare Pages** and version-controlled using **GitHub**. It is written in HTML and CSS and represents the professional and analytical qualifications of James Gregory Walsh.
-
-The portfolio includes:
-
-- Overview of professional background in clinical psychology and behavioral response
-- Detailed experience with interdisciplinary crisis teams
-- Key competencies in analytical tools and threat assessment
-- A curated list of public and private projects, including external tools and casework
-
----
-
-## Technologies Used
-
-- HTML5 and CSS3
-- Git + GitHub
-- Cloudflare Pages (static deployment)
-- Visual Studio Code + Dreamweaver
-- SPSS, R, Excel (referenced in content and case projects)
+- [Albany Watch](https://crime.albany.watch)
 
 ---
 
@@ -51,33 +69,9 @@ The portfolio includes:
 ├── contact.html
 ├── 404.html
 ├── assets/
-│   └── Profile.pdf
+│   ├── Profile.pdf
+│   └── images/
 ├── css/
 │   └── styles.css
 └── README.md
-
----
-
-## Resume
-
-A downloadable résumé is available at:
-
-[Profile.pdf](https://jgwalsh.net/assets/Profile.pdf)
-
-You may also review professional history via the [Experience](https://jgwalsh.net/experience.html) page.
-
----
-
-## Contact
-
-- **Email:** [jgwalsh@bu.edu](mailto:jgwalsh@bu.edu)  
-- **Location:** Albany, NY & Boston, MA
-
-For employment inquiries or collaborations, please reach out or visit the [Contact](https://jgwalsh.net/contact.html) page.
-
----
-
-## License
-
-All content © 2025 James Gregory Walsh. All rights reserved.  
-This project is maintained for academic and professional presentation purposes.
+```
