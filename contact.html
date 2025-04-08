@@ -25,26 +25,26 @@
   <link rel="manifest" href="assets/Favicons/manifest.json">
 </head>
 <body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
-  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm py-3 backdrop-filter backdrop-blur-md"> <!-- Added backdrop blur for better readability -->
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <!-- Branding -->
       <div class="text-left">
         <h1 class="text-xl font-serif font-bold leading-tight">James Gregory Walsh</h1>
-        <p class="text-sm text-blue-100">Professional Portfolio</p>
+        <p class="text-sm text-blue-100 font-sans">Professional Portfolio</p>
       </div>
 
-      <!-- Mobile toggle button -->
-      <button id="menuToggle" class="sm:hidden text-white focus:outline-none text-lg" aria-label="Toggle menu">
+      <!-- Mobile menu toggle -->
+      <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">
         ☰
       </button>
 
-      <!-- Desktop Nav -->
-      <nav class="hidden sm:flex space-x-6 text-sm font-medium font-sans">
-        <a href="index.html" class="hover:text-blue-300 transition">Home</a>
+      <!-- Desktop nav -->
+      <nav class="hidden sm:flex gap-6 text-sm font-medium font-sans ml-6">
+        <a href="index.html" class="hover:text-blue-300 transition" aria-current="page">Home</a>
         <a href="about.html" class="hover:text-blue-300 transition">About</a>
         <a href="experience.html" class="hover:text-blue-300 transition">Experience</a>
         <a href="projects.html" class="hover:text-blue-300 transition">Projects</a>
-        <a href="contact.html" class="hover:text-blue-300 transition active" aria-current="page">Contact</a> <!-- Highlight active page -->
+        <a href="contact.html" class="hover:text-blue-300 transition">Contact</a>
       </nav>
     </div>
 
@@ -55,13 +55,12 @@
         <li><a href="about.html" class="block hover:text-blue-300">About</a></li>
         <li><a href="experience.html" class="block hover:text-blue-300">Experience</a></li>
         <li><a href="projects.html" class="block hover:text-blue-300">Projects</a></li>
-        <li><a href="contact.html" class="block hover:text-blue-300 active" aria-current="page">Contact</a> <!-- Highlight active page -->
-        </li>
+        <li><a href="contact.html" class="block hover:text-blue-300">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="flex-grow container max-w-4xl mx-auto px-4 py-12">
+  <main class="flex-grow container max-w-4xl mx-auto px-4 pt-16 pb-12">
     <section id="contact" class="reveal max-w-4xl mx-auto px-6 py-12 bg-white rounded-xl shadow-md">
       <h2 class="text-3xl font-bold text-blue-900 mb-8 tracking-tight">Contact Me</h2>
 
