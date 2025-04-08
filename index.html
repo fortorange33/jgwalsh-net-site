@@ -69,9 +69,6 @@
             <li><a href="contact.html" class="hover:text-blue-300 transition">Contact</a></li>
           </ul>
         </nav>
-        <button id="darkToggle" type="button" class="px-3 py-1 text-sm bg-white text-blue-900 rounded-md hover:bg-gray-200 transition">
-          Toggle Dark Mode
-        </button>
       </div>
     </div>
   </header>
@@ -116,40 +113,5 @@
       </div>
     </div>
   </footer>
-
-  <!-- Add Dark Mode Toggle Button -->
-  <button id="darkToggle" class="fixed bottom-4 right-4 bg-gray-800 text-white p-2 rounded-full shadow-lg focus:outline-none">
-    Toggle Dark Mode
-  </button>
-
-  <!-- Dark Mode Toggle Script -->
-  <script>
-    const toggle = document.getElementById('darkToggle');
-    if (toggle) {
-      const isDarkMode = localStorage.getItem('darkMode') === 'true';
-
-      if (isDarkMode) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-
-      toggle.addEventListener('click', () => {
-        const isDark = document.documentElement.classList.toggle('dark');
-        localStorage.setItem('darkMode', isDark);
-      });
-    } else {
-      console.warn('Dark mode toggle button not found.');
-    }
-
-    const menuToggle = document.getElementById('menuToggle');
-    const mobileMenu = document.getElementById('mobileMenu');
-
-    if (menuToggle && mobileMenu) {
-      menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-    }
-  </script>
 </body>
 </html>
