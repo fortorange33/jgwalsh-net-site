@@ -25,28 +25,45 @@
   </header>
 
   <main class="container">
-    <section id="contact" class="reveal">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/your-form-id" method="POST" aria-label="Contact Form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required aria-label="Your name" />
+    <section id="contact" class="reveal max-w-4xl mx-auto px-6 py-12">
+      <h2 class="text-2xl font-bold mb-6">Contact Me</h2>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required aria-label="Your email address" />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Contact Form -->
+        <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4" aria-label="Contact Form">
+          <div>
+            <label for="name" class="block font-semibold mb-1">Name:</label>
+            <input type="text" id="name" name="name" required class="w-full border rounded px-3 py-2" aria-label="Your name" />
+          </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="6" required aria-label="Your message"></textarea>
+          <div>
+            <label for="email" class="block font-semibold mb-1">Email:</label>
+            <input type="email" id="email" name="email" required class="w-full border rounded px-3 py-2" aria-label="Your email address" />
+          </div>
 
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+          <div>
+            <label for="message" class="block font-semibold mb-1">Message:</label>
+            <textarea id="message" name="message" rows="6" required class="w-full border rounded px-3 py-2" aria-label="Your message"></textarea>
+          </div>
 
-      <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:jgwalsh@proton.me">jgwalsh@proton.me</a></p>
-        <p><strong>Phone:</strong> (617) 383-3745</p>
-        <p><strong>Location:</strong> Albany, NY & Boston, MA</p>
-        <p>
-          <a href="/assets/Profile.pdf" class="btn" target="_blank">View Résumé (PDF)</a>
-        </p>
+          <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800 transition">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="space-y-3">
+          <p><strong>Email:</strong> <a href="mailto:jgwalsh@proton.me" class="text-blue-600 hover:underline">jgwalsh@proton.me</a></p>
+          <p><strong>Phone:</strong> (617) 383-3745</p>
+          <p><strong>Location:</strong> Albany, NY & Boston, MA</p>
+          <p>
+            <a href="/assets/Profile.pdf" class="inline-block mt-2 px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded hover:bg-gray-700 transition" target="_blank">View Résumé (PDF)</a>
+          </p>
+          <hr class="my-6" />
+          <div class="digital-card">
+            <h3 class="text-lg font-semibold mb-2">Digital Business Card</h3>
+            <p class="mb-2">Access my digital contact card for easy saving, scanning, or sharing:</p>
+            <a href="/card" class="inline-block px-4 py-2 bg-green-700 text-white text-sm font-medium rounded hover:bg-green-600 transition" target="_blank">View Digital Card</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
