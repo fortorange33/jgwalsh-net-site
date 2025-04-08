@@ -24,7 +24,7 @@
 </head>
 <body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
   <!-- Header -->
-  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm py-3 backdrop-filter backdrop-blur-md"> <!-- Added backdrop blur for better readability -->
     <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
       <!-- Site Name -->
       <div class="text-center md:text-left">
@@ -34,13 +34,21 @@
 
       <!-- Nav + Toggle Group -->
       <div class="flex flex-col md:flex-row items-center gap-4 w-full md:w-auto">
-        <nav class="w-full md:w-auto">
-          <ul class="flex flex-wrap justify-center md:justify-end gap-4 text-sm font-medium font-sans">
-            <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
-            <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
-            <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
-            <li><a href="projects.html" class="hover:text-blue-300 transition">Projects</a></li>
-            <li><a href="contact.html" class="hover:text-blue-300 transition">Contact</a></li>
+        <nav class="hidden sm:flex space-x-6 text-sm font-medium font-sans">
+          <a href="index.html" class="hover:text-blue-300 transition">Home</a>
+          <a href="about.html" class="hover:text-blue-300 transition active" aria-current="page">About</a> <!-- Highlight active page -->
+          <a href="experience.html" class="hover:text-blue-300 transition">Experience</a>
+          <a href="projects.html" class="hover:text-blue-300 transition">Projects</a>
+          <a href="contact.html" class="hover:text-blue-300 transition">Contact</a>
+        </nav>
+        <nav id="mobileMenu" class="sm:hidden hidden px-4 pb-4 text-sm font-medium font-sans">
+          <ul class="space-y-2 text-center">
+            <li><a href="index.html" class="block hover:text-blue-300">Home</a></li>
+            <li><a href="about.html" class="block hover:text-blue-300 active" aria-current="page">About</a> <!-- Highlight active page -->
+            </li>
+            <li><a href="experience.html" class="block hover:text-blue-300">Experience</a></li>
+            <li><a href="projects.html" class="block hover:text-blue-300">Projects</a></li>
+            <li><a href="contact.html" class="block hover:text-blue-300">Contact</a></li>
           </ul>
         </nav>
       </div>

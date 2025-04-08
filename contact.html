@@ -25,7 +25,7 @@
   <link rel="manifest" href="assets/Favicons/manifest.json">
 </head>
 <body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
-  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
+  <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm py-3 backdrop-filter backdrop-blur-md"> <!-- Added backdrop blur for better readability -->
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <!-- Branding -->
       <div class="text-left">
@@ -39,12 +39,12 @@
       </button>
 
       <!-- Desktop Nav -->
-      <nav class="hidden sm:flex gap-6 text-sm font-medium font-sans">
+      <nav class="hidden sm:flex space-x-6 text-sm font-medium font-sans">
         <a href="index.html" class="hover:text-blue-300 transition">Home</a>
         <a href="about.html" class="hover:text-blue-300 transition">About</a>
         <a href="experience.html" class="hover:text-blue-300 transition">Experience</a>
         <a href="projects.html" class="hover:text-blue-300 transition">Projects</a>
-        <a href="contact.html" class="hover:text-blue-300 transition">Contact</a>
+        <a href="contact.html" class="hover:text-blue-300 transition active" aria-current="page">Contact</a> <!-- Highlight active page -->
       </nav>
     </div>
 
@@ -55,7 +55,8 @@
         <li><a href="about.html" class="block hover:text-blue-300">About</a></li>
         <li><a href="experience.html" class="block hover:text-blue-300">Experience</a></li>
         <li><a href="projects.html" class="block hover:text-blue-300">Projects</a></li>
-        <li><a href="contact.html" class="block hover:text-blue-300">Contact</a></li>
+        <li><a href="contact.html" class="block hover:text-blue-300 active" aria-current="page">Contact</a> <!-- Highlight active page -->
+        </li>
       </ul>
     </nav>
   </header>
