@@ -13,22 +13,31 @@
 </head>
 
 <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-  <header class="border-b dark:border-gray-700 py-4 px-6 bg-gray-50 dark:bg-gray-800">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-      <div>
-        <h1 class="text-xl font-bold text-gray-900">James Gregory Walsh</h1>
-        <p class="text-sm text-gray-600 dark:text-gray-400">Professional Portfolio</p>
+  <header class="bg-white border-b shadow-sm sticky top-0 z-50 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <!-- Logo & Site Name -->
+      <div class="flex items-center gap-2">
+        <!-- Optional icon/logo -->
+        <!-- <img src="assets/images/logo.svg" alt="JG Logo" class="w-6 h-6"> -->
+        <h1 class="text-2xl font-serif font-bold text-gray-900 dark:text-white tracking-tight">James Gregory Walsh</h1>
       </div>
-      <nav class="mt-4 md:mt-0 flex items-center gap-4">
-        <ul class="flex flex-col md:flex-row gap-4">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="experience.html">Experience</a></li>
-          <li><a href="projects.html" class="text-blue-600 underline">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <button id="darkToggle" class="ml-4 px-3 py-1 text-sm bg-gray-200 dark:bg-gray-700 rounded">Toggle Dark Mode</button>
+
+      <!-- Mobile Menu Toggle (optional JS-controlled) -->
+      <!-- Future enhancement can include toggle button for mobile menu -->
+
+      <!-- Navigation -->
+      <nav class="hidden md:flex space-x-6 text-sm font-medium font-sans">
+        <a href="index.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition">Home</a>
+        <a href="about.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition">About</a>
+        <a href="experience.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition">Experience</a>
+        <a href="projects.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition">Projects</a>
+        <a href="contact.html" class="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition">Contact</a>
       </nav>
+
+      <!-- Dark Mode Toggle -->
+      <button id="darkToggle" class="ml-4 px-3 py-1 text-sm bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition">
+        Toggle Dark Mode
+      </button>
     </div>
   </header>
 
