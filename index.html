@@ -112,12 +112,14 @@
   </footer>
 
   <script>
-    // Dark mode toggle with persistence
+    // Improved Dark mode toggle with persistence
     const toggle = document.getElementById('darkToggle');
     const isDarkMode = localStorage.getItem('darkMode') === 'true';
 
     if (isDarkMode) {
       document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
     }
 
     toggle.addEventListener('click', () => {
