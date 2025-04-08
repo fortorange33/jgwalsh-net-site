@@ -3,80 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional portfolio of James Gregory Walsh — integrating psychology, behavioral science, and law enforcement readiness." />
+  <meta name="description" content="Portfolio of James Gregory Walsh — integrating psychology, behavioral science, and law enforcement readiness." />
   <meta name="author" content="James Gregory Walsh" />
-  <meta name="keywords" content="James Gregory Walsh, Greg Walsh, portfolio, law enforcement, behavioral analysis, mental health, public safety, SPSS, R, threat assessment" />
 
   <title>James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio</title>
 
   <!-- Favicon and Apple Touch Icons -->
-  <link rel="icon" type="image/x-icon" href="assets/Favicons/favicon.ico">
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/Favicons/favicon-57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/Favicons/favicon-60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/Favicons/favicon-72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/Favicons/favicon-76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/Favicons/favicon-114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/Favicons/favicon-120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/Favicons/favicon-144-precomposed.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/Favicons/favicon-152-precomposed.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/favicon-180-precomposed.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicons/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/Favicons/favicon-96.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/Favicons/favicon-192.png">
-  <link rel="manifest" href="assets/Favicons/manifest.json">
+  <link rel="icon" href="assets/Favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicons/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/favicon-180-precomposed.png" />
+  <link rel="manifest" href="assets/Favicons/manifest.webmanifest" />
 
-  <!-- Tailwind CSS (production-safe CDN) -->
+  <!-- Tailwind CSS -->
   <link rel="stylesheet" href="assets/css/tailwind.min.css" />
-
-  <!-- Google Fonts -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    body { font-family: 'Inter', sans-serif; }
-
-    h2, h3 {
-      margin-top: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    p {
-      margin-bottom: 1rem;
-    }
-
-    li {
-      margin-bottom: 0.5rem;
-    }
-
-    section {
-      padding: 2rem 0;
-    }
-
-    .flex-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        padding: 1rem;
-      }
-    }
-  </style>
 </head>
 
-<body class="min-h-screen flex flex-col font-sans bg-gray-50 text-gray-900">
+<body class="font-sans bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+  <!-- Header -->
   <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between">
-      <!-- Title -->
-      <div class="text-center sm:text-left mb-2 sm:mb-0">
-        <h1 class="text-xl font-serif font-bold tracking-tight">James Gregory Walsh</h1>
-        <p class="text-sm text-blue-100">Professional Portfolio</p>
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <!-- Branding -->
+      <div class="text-center sm:text-left">
+        <h1 class="text-2xl font-serif font-bold tracking-tight leading-snug">James Gregory Walsh</h1>
+        <p class="text-sm text-blue-100 font-sans">Professional Portfolio</p>
       </div>
 
       <!-- Navigation -->
-      <nav>
-        <ul class="flex flex-wrap justify-center sm:justify-end gap-4 text-sm font-medium font-sans">
+      <nav class="w-full sm:w-auto">
+        <ul class="flex flex-col sm:flex-row justify-center sm:justify-end gap-4 text-sm font-medium font-sans">
           <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
           <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
           <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
@@ -87,34 +45,41 @@
     </div>
   </header>
 
-  <main class="flex-grow container max-w-4xl mx-auto px-4 py-12">
-    <section id="welcome" class="prose prose-lg max-w-none dark:prose-invert">
-      <h2 class="text-3xl font-semibold mb-6">Welcome</h2>
+  <!-- Main -->
+  <main class="flex-grow container max-w-4xl mx-auto px-4 pt-16 pb-12">
+    <h2 class="text-3xl font-bold mb-6">Welcome</h2>
 
-      <p>Welcome to <strong>jgwalsh.net</strong>. This site highlights my background in psychology, data analysis, and law enforcement readiness.</p>
+    <p class="mb-4">
+      Welcome to <strong>jgwalsh.net</strong>. This site highlights my background in psychology, data analysis, and law enforcement readiness.
+    </p>
 
-      <p>I have over three years of experience as a mental health specialist at 
-        <a href="https://en.wikipedia.org/wiki/McLean_Hospital" target="_blank" rel="noopener" class="text-blue-700 underline">McLean Hospital</a>, 
-        specifically within the 
-        <a href="https://www.mcleanhospital.org/treatment/mclean-franciscan-child-and-adolescent-inpatient-program" target="_blank" rel="noopener" class="text-blue-700 underline">McLean-Franciscan</a> 
-        unit, a psychiatric hospital in Brighton, Massachusetts affiliated with Harvard Medical School. My work involved clinical assessment, crisis intervention, and interdisciplinary collaboration within acute psychiatric settings.
-      </p>
+    <p class="mb-4">
+      I have over three years of experience as a mental health specialist at 
+      <a href="https://en.wikipedia.org/wiki/McLean_Hospital" target="_blank" rel="noopener" class="text-blue-700 underline">McLean Hospital</a>, 
+      specifically within the 
+      <a href="https://www.mcleanhospital.org/treatment/mclean-franciscan-child-and-adolescent-inpatient-program" target="_blank" rel="noopener" class="text-blue-700 underline">McLean-Franciscan</a> 
+      unit, a psychiatric hospital in Brighton, Massachusetts affiliated with Harvard Medical School. My work involved clinical assessment, crisis intervention, and interdisciplinary collaboration within acute psychiatric settings.
+    </p>
 
-      <p>My educational foundation in psychology—spanning undergraduate and graduate-level training—is enhanced by strong quantitative and analytical capabilities, particularly using SPSS, R, and Excel.</p>
+    <p class="mb-4">
+      My educational foundation in psychology—spanning undergraduate and graduate-level training—is enhanced by strong quantitative and analytical capabilities, particularly using SPSS, R, and Excel.
+    </p>
 
-      <p>Returning home to Albany, New York, during the COVID-19 pandemic coincided with significant transformations in the field and profession of clinical psychology and the broader mental health system, notably the rise of remote teletherapy. Observing these changes inspired me to reconsider my career direction and explore how my experience might align with alternative professional pathways. This period of reassessment has motivated my current pursuit of opportunities within federal or state law enforcement, aiming to address critical challenges facing local communities and the nation.</p>
+    <p class="mb-4">
+      Returning home to Albany, New York, during the COVID-19 pandemic coincided with significant transformations in the field and profession of clinical psychology and the broader mental health system, notably the rise of remote teletherapy. Observing these changes inspired me to reconsider my career direction and explore how my experience might align with alternative professional pathways. This period of reassessment has motivated my current pursuit of opportunities within federal or state law enforcement, aiming to address critical challenges facing local communities and the nation.
+    </p>
 
-      <h3 class="text-2xl font-semibold mt-10 mb-4">Core Competencies</h3>
-      <ul class="list-disc list-inside space-y-2 ml-4">
-        <li><strong>Behavioral Assessment and Crisis Intervention</strong></li>
-        <li><strong>Interdisciplinary Collaboration and Communication</strong></li>
-        <li><strong>Advanced Quantitative Analysis</strong> (SPSS, R, Excel)</li>
-        <li><strong>Applied Psychological Principles</strong></li>
-        <li><strong>Adaptability, Critical Thinking, and Analytical Problem-Solving</strong></li>
-      </ul>
-    </section>
+    <h3 class="text-2xl font-semibold mt-10 mb-4">Core Competencies</h3>
+    <ul class="list-disc list-inside space-y-2 ml-4">
+      <li><strong>Behavioral Assessment and Crisis Intervention</strong></li>
+      <li><strong>Interdisciplinary Collaboration and Communication</strong></li>
+      <li><strong>Advanced Quantitative Analysis</strong> (SPSS, R, Excel)</li>
+      <li><strong>Applied Psychological Principles</strong></li>
+      <li><strong>Adaptability, Critical Thinking, and Analytical Problem-Solving</strong></li>
+    </ul>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-gray-100 border-t py-6 text-center text-sm text-gray-600">
     <div class="max-w-6xl mx-auto px-4">
       <div class="flex flex-col md:flex-row justify-between items-center gap-4">
