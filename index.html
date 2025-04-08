@@ -10,7 +10,7 @@
   <title>James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio</title>
 
   <!-- Tailwind CSS (production-safe CDN) -->
-  <link href="assets/css/tailwind.min.css" rel="stylesheet">
+  <link href="/assets/css/tailwind.min.css" rel="stylesheet">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -52,13 +52,10 @@
 
 <body class="font-sans">
   <header class="bg-[#1C2D4A] text-white sticky top-0 z-50 shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-      <div>
-        <h1 class="text-2xl font-serif font-bold tracking-tight">James Gregory Walsh</h1>
-        <p class="text-sm text-white font-sans">Professional Portfolio</p>
-      </div>
-      <nav class="w-full md:w-auto">
-        <ul class="flex flex-wrap gap-4 md:justify-end text-sm font-medium font-sans">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-serif font-bold tracking-tight">James Gregory Walsh</h1>
+      <nav>
+        <ul class="flex space-x-6 text-sm font-medium">
           <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
           <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
           <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
@@ -97,25 +94,52 @@
     </section>
   </main>
 
-  <footer class="bg-gray-50 dark:bg-gray-800 border-t dark:border-gray-700 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
-    &copy; 2025 James Gregory Walsh. All rights reserved.
+  <footer class="bg-gray-100 dark:bg-gray-800 border-t dark:border-gray-700 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+        <ul class="flex space-x-4">
+          <li><a href="mailto:contact@jgwalsh.net" class="hover:text-blue-500 transition">Email</a></li>
+          <li><a href="/privacy.html" class="hover:text-blue-500 transition">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="hover:text-blue-500 transition">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
   </footer>
 
-  <script>
-    // Improved Dark mode toggle with persistence
-    const toggle = document.getElementById('darkToggle');
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  <!-- Add Dark Mode Toggle Button -->
+  <button id="darkToggle" class="fixed bottom-4 right-4 bg-gray-800 text-white p-2 rounded-full shadow-lg focus:outline-none">
+    Toggle Dark Mode
+  </button>
 
-    if (isDarkMode) {
-      document.documentElement.classList.add('dark');
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    if (toggle) {
+      const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+      if (isDarkMode) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+
+      toggle.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('darkMode', isDark);
+      });
     } else {
-      document.documentElement.classList.remove('dark');
+      console.warn('Dark mode toggle button not found.');
     }
 
-    toggle.addEventListener('click', () => {
-      const isDark = document.documentElement.classList.toggle('dark');
-      localStorage.setItem('darkMode', isDark);
-    });
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
   </script>
 </body>
 </html>
