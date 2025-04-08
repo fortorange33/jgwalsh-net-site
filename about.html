@@ -3,70 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="About James Gregory Walsh (Greg) – Clinical psychology professional with experience in behavioral risk assessment and law enforcement readiness." />
-  <meta name="author" content="James Gregory Walsh" />
-  <meta name="keywords" content="James Gregory Walsh, about, background, law enforcement, psychology, portfolio" />
-  <title>About – James Gregory Walsh</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <title>About | James Gregory Walsh</title>
+  <link href="assets/css/tailwind.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans">
-  <header class="bg-white border-b shadow-sm">
+<body class="font-sans bg-gray-50 text-gray-900">
+  <!-- Header -->
+  <header class="bg-white border-b shadow-sm sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
       <div>
         <h1 class="text-2xl font-serif font-bold text-gray-900 tracking-tight">James Gregory Walsh</h1>
         <p class="text-sm text-gray-600 font-sans">Professional Portfolio</p>
       </div>
-      <nav>
-        <ul class="flex flex-wrap gap-4 text-sm font-medium font-sans">
+      <nav class="w-full md:w-auto">
+        <ul class="flex flex-wrap gap-4 md:justify-end text-sm font-medium font-sans">
           <li><a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a></li>
-          <li><a href="about.html" class="text-gray-700 hover:text-blue-700 transition">About</a></li>
+          <li><a href="about.html" class="text-blue-900 underline" aria-current="page">About</a></li>
           <li><a href="experience.html" class="text-gray-700 hover:text-blue-700 transition">Experience</a></li>
           <li><a href="projects.html" class="text-gray-700 hover:text-blue-700 transition">Projects</a></li>
-          <li><a href="contact.html" class="text-blue-900 underline" aria-current="page">Contact</a></li>
+          <li><a href="contact.html" class="text-gray-700 hover:text-blue-700 transition">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about" class="reveal">
-      <h2>About Me</h2>
-      <p>
-        My name is <strong>James Gregory Walsh</strong>, though I often go by Greg. I hold a strong foundation in mental health counseling, with over five years of experience collaborating closely with psychiatrists, psychologists, psychiatric nurses, and social workers to support vulnerable populations. This interdisciplinary experience has shaped my approach to public service and fuels my current pursuit of a career in federal or state law enforcement.
+  <!-- Main Content -->
+  <main>
+    <section id="about" class="container mx-auto px-4 py-12 bg-white rounded-xl shadow-md max-w-4xl">
+      <h1 class="text-3xl font-bold text-blue-900 mb-8 tracking-tight">📝 About | James Gregory Walsh</h1>
+
+      <p class="mb-4">Welcome. I’m James Gregory Walsh—Greg, professionally—leveraging a unique background in clinical psychology and data analysis to address complex challenges in behavioral assessment, crisis response, and investigative strategy. My career began in clinical mental health and is now directed towards pursuing law enforcement roles where I can combine psychological insight with analytical precision.</p>
+
+      <p class="mb-4">My foundational experience includes over three years as a mental health specialist at McLean Hospital, within the McLean-Franciscan psychiatric unit affiliated with Harvard Medical School. In that demanding role, I conducted clinical assessments, contributed to critical risk evaluations, and collaborated within interdisciplinary teams in acute psychiatric settings. This work honed not just empathy and resilience, but also the ability to make structured, high-stakes decisions under pressure—skills directly applicable to federal and state law enforcement challenges.</p>
+
+      <p class="mb-4">Academically, I possess undergraduate and graduate-level training in applied psychology, complemented by robust statistical training. I am proficient in applying data analysis tools like <strong>SPSS</strong>, <strong>R</strong>, and <strong>Excel</strong> to translate complex data into actionable insights, particularly for behavioral risk management, investigative planning, and ensuring civic accountability.</p>
+
+      <p class="mb-4">The societal shifts highlighted during the COVID-19 pandemic, observed upon returning to Albany, New York, crystallized my professional direction. Witnessing the intersecting challenges within mental health systems and public institutions reinforced my conviction that principled, analytically-driven professionals are essential in modern law enforcement and public service. This led to the formation of my portfolio and its companion project, the <a href="https://albany.watch" class="text-blue-700 underline" target="_blank" rel="noopener">Albany Aegis Initiative</a>—a personal civic effort I developed to explore the integration of behavioral science, community safety, and operational intelligence.</p>
+
+      <p class="mb-8">My objective is to apply my interdisciplinary skill set—whether through research, field analysis, or collaboration—to serve and strengthen the institutions that protect our communities and uphold our legal and civic frameworks.</p>
+
+      <p class="mb-10">
+        For a detailed overview of my qualifications and experience, please
+        <a href="/assets/Profile.pdf" class="text-blue-600 hover:underline" download>Download My Résumé</a>.
       </p>
-      <p>
-        My academic background includes graduate-level training in applied clinical psychology, emphasizing both theoretical insight and hands-on practice. I’ve developed complementary analytical competencies through the use of tools like <strong>SPSS, R, and Excel</strong> — skills that are vital for investigative work, risk assessment, and data-informed decision-making.
-      </p>
-      <p>
-        My goal is to integrate these dual competencies — human empathy and statistical reasoning — into roles centered on <em>public safety, crisis management, and behavioral threat evaluation</em>. Whether through enforcement, prevention, or analysis, I aim to contribute meaningfully to mission-driven organizations dedicated to justice, resilience, and civic protection.
-      </p>
+
+      <h2 class="text-2xl font-semibold text-blue-900 mb-4">Core Values</h2>
+      <ul class="list-disc list-inside space-y-2 text-gray-800">
+        <li><strong>Precision</strong> — Rooted in data, observation, and structured judgment</li>
+        <li><strong>Integrity</strong> — Grounded in both civic duty and professional ethics</li>
+        <li><strong>Interdisciplinary Thinking</strong> — Bridging psychology, analytics, and public policy</li>
+        <li><strong>Adaptability</strong> — Responsive to emerging threats and systemic change</li>
+      </ul>
     </section>
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="bg-gray-100 border-t mt-12 py-6 text-center text-sm text-gray-600">
     <p>&copy; 2025 James Gregory Walsh. All rights reserved.</p>
+    <p class="mt-1">
+      <a href="mailto:jgwalsh@proton.me" class="text-blue-600 hover:underline">jgwalsh@proton.me</a> |
+      <a href="https://jgwalsh.net" class="text-blue-600 hover:underline" target="_blank" rel="noopener">jgwalsh.net</a>
+    </p>
   </footer>
-
-  <script>
-    const toggle = document.getElementById('darkToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-    });
-
-    const reveals = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('reveal');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    reveals.forEach(section => {
-      section.classList.remove('reveal');
-      observer.observe(section);
-    });
-  </script>
 </body>
 </html>

@@ -6,9 +6,27 @@
   <meta name="robots" content="noindex" />
   <title>404 – Page Not Found</title>
   <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="font-sans">
+  <header class="bg-white border-b shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+        <h1 class="text-2xl font-serif font-bold text-gray-900 tracking-tight">James Gregory Walsh</h1>
+        <p class="text-sm text-gray-600 font-sans">Professional Portfolio</p>
+      </div>
+      <nav>
+        <ul class="flex flex-wrap gap-4 text-sm font-medium font-sans">
+          <li><a href="index.html" class="text-gray-700 hover:text-blue-700 transition">Home</a></li>
+          <li><a href="about.html" class="text-gray-700 hover:text-blue-700 transition">About</a></li>
+          <li><a href="experience.html" class="text-gray-700 hover:text-blue-700 transition">Experience</a></li>
+          <li><a href="projects.html" class="text-gray-700 hover:text-blue-700 transition">Projects</a></li>
+          <li><a href="contact.html" class="text-blue-900 underline" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main class="container text-center">
     <section class="reveal">
       <h1 class="error-title">404 – Page Not Found</h1>
