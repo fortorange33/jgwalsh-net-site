@@ -1,0 +1,10 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Ensure compatibility for appearance property */
+input, button {
+  -webkit-appearance: none;
+  appearance: none;
+}

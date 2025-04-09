@@ -9,3 +9,14 @@ module.exports = {
   },
   plugins: [],
 };
+
+html, body {
+  overscroll-behavior: none; /* Modern browsers */
+}
+@supports not (overscroll-behavior: none) {
+  /* Fallback styles for older browsers */
+}
+
+.custom-class {
+  vertical-align: baseline; /* Only if needed */
+}
