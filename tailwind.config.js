@@ -13,6 +13,12 @@ module.exports = {
 html, body {
   overscroll-behavior: none; /* Modern browsers */
 }
+
+html {
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 @supports not (overscroll-behavior: none) {
   /* Fallback styles for older browsers */
 }
