@@ -31,37 +31,41 @@
   <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
       <!-- Branding -->
-      <div class="branding">
-        <h1 class="text-xl font-serif font-bold leading-tight">James Gregory Walsh</h1>
+      <div class="leading-tight">
+        <h1 class="text-xl font-serif font-bold">James Gregory Walsh</h1>
         <p class="text-blue-100 text-sm">Professional Portfolio</p>
       </div>
 
-      <!-- Mobile menu toggle -->
+      <!-- Mobile Toggle Button (Hamburger) -->
       <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">
         ☰
       </button>
 
-      <!-- Desktop nav -->
-      <nav class="hidden sm:flex gap-6 text-sm font-medium font-sans ml-6">
-        <a href="index.html" class="hover:text-blue-300 transition" aria-current="page">Home</a>
-        <a href="about.html" class="hover:text-blue-300 transition">About</a>
-        <a href="experience.html" class="hover:text-blue-300 transition">Experience</a>
-        <a href="projects.html" class="hover:text-blue-300 transition">Projects</a>
-        <a href="contact.html" class="hover:text-blue-300 transition">Contact</a>
+      <!-- Navigation -->
+      <nav>
+        <ul id="mobileMenu" class="sm:flex hidden gap-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-blue-300 transition">Home</a></li>
+          <li><a href="about.html" class="hover:text-blue-300 transition">About</a></li>
+          <li><a href="experience.html" class="hover:text-blue-300 transition">Experience</a></li>
+          <li><a href="projects.html" class="hover:text-blue-300 transition">Projects</a></li>
+          <li><a href="contact.html" class="hover:text-blue-300 transition">Contact</a></li>
+        </ul>
       </nav>
     </div>
-
-    <!-- Mobile nav -->
-    <nav id="mobileMenu" class="sm:hidden hidden px-4 pb-4 text-sm font-medium font-sans">
-      <ul class="space-y-2 text-center">
-        <li><a href="index.html" class="block hover:text-blue-300">Home</a></li>
-        <li><a href="about.html" class="block hover:text-blue-300">About</a></li>
-        <li><a href="experience.html" class="block hover:text-blue-300">Experience</a></li>
-        <li><a href="projects.html" class="block hover:text-blue-300">Projects</a></li>
-        <li><a href="contact.html" class="block hover:text-blue-300">Contact</a></li>
-      </ul>
-    </nav>
   </header>
+
+  <!-- Toggle Menu Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const toggleBtn = document.getElementById('menuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+
+      toggleBtn.addEventListener('click', () => {
+        // Toggle the "hidden" class each time the user clicks
+        mobileMenu.classList.toggle('hidden');
+      });
+    });
+  </script>
 
   <main class="flex-grow container max-w-4xl mx-auto px-4 pt-16 pb-12">
     <section>
@@ -105,17 +109,5 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const toggle = document.getElementById('menuToggle');
-      const menu = document.getElementById('mobileMenu');
-      if (toggle && menu) {
-        toggle.addEventListener('click', () => {
-          menu.classList.toggle('hidden');
-        });
-      }
-    });
-  </script>
 </body>
 </html>
