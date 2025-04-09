@@ -43,7 +43,7 @@ h3 {
 
 /* Navigation (Header) */
 header {
-  background-color: #1e40af; /* Blue-900 or your preferred header color */
+  background: linear-gradient(90deg, #1e40af, #2563eb);
   color: #ffffff;
   position: sticky;
   top: 0;
@@ -66,6 +66,11 @@ header .branding {
   /* If you have specific styles for your site branding, place them here */
 }
 
+header .branding:hover {
+  color: #cbd5e1; /* Slightly lighter on hover */
+  transition: color 0.3s ease;
+}
+
 /* Desktop Nav */
 nav {
   display: flex;
@@ -78,6 +83,8 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1rem; /* spacing between nav items */
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
 }
 
 nav a {
@@ -89,6 +96,7 @@ nav a {
 
 nav a:hover {
   color: #cbd5e1; /* Slightly lighter on hover */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 /* Mobile Toggle Button */
@@ -103,6 +111,8 @@ button#menuToggle {
 }
 button#menuToggle:hover {
   color: #cbd5e1;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
 
 /* Hide your main UL on small devices if you’re using a toggle-based approach */
@@ -129,6 +139,7 @@ button#menuToggle:hover {
   background-color: #f8fafc;
   padding: 4rem 2rem;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero h2 {
@@ -155,6 +166,7 @@ button#menuToggle:hover {
 
 .hero a.btn:hover {
   background-color: #1d4ed8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /* Section Styling */
@@ -175,9 +187,10 @@ li {
 footer {
   text-align: center;
   font-size: 0.875rem;
-  color: #64748b;
   padding: 2rem 0;
   border-top: 1px solid #e2e8f0;
+  background: linear-gradient(90deg, #1e293b, #334155);
+  color: #e2e8f0;
 }
 
 /* Dark Mode */
