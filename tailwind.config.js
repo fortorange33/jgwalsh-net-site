@@ -18,5 +18,5 @@ html, body {
 }
 
 .custom-class {
-  vertical-align: baseline; /* Only if needed */
+  /* Removed vertical-align: baseline; as it is ineffective for block-level elements */
 }
