@@ -1,0 +1,39 @@
+# Jekyll and Ruby
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+
+# Dreamweaver
+_notes/
+_dwsync.xml
+
+# Editor settings
+.vscode/
+*.code-workspace
+
+# Build artifacts
+*.tmp
+*.bak
+*.swp
+
+# Bundler environment
+.bundle/
+
+# Others
+.env
+.cache/
