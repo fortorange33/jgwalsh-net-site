@@ -1,7 +1,24 @@
 {
+<<<<<<< HEAD
+=======
+  "name": "simple-ssg-project",
+  "version": "1.0.0",
+  "description": "A simple static site generator project",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ssg.js",
+    "start": "serve dist"
+  },
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
   "dependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.3"
+<<<<<<< HEAD
+=======
+  },
+  "devDependencies": {
+    "serve": "^14.0.1"
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
   }
 }

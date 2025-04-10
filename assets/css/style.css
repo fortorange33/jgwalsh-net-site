@@ -43,7 +43,11 @@ h3 {
 
 /* Navigation (Header) */
 header {
+<<<<<<< HEAD
   background-color: #1e40af; /* Blue-900 or your preferred header color */
+=======
+  background: linear-gradient(90deg, #1e40af, #2563eb);
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
   color: #ffffff;
   position: sticky;
   top: 0;
@@ -66,6 +70,14 @@ header .branding {
   /* If you have specific styles for your site branding, place them here */
 }
 
+<<<<<<< HEAD
+=======
+header .branding:hover {
+  color: #cbd5e1; /* Slightly lighter on hover */
+  transition: color 0.3s ease;
+}
+
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
 /* Desktop Nav */
 nav {
   display: flex;
@@ -78,6 +90,11 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1rem; /* spacing between nav items */
+<<<<<<< HEAD
+=======
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
 }
 
 nav a {
@@ -89,6 +106,10 @@ nav a {
 
 nav a:hover {
   color: #cbd5e1; /* Slightly lighter on hover */
+<<<<<<< HEAD
+=======
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
 }
 
 /* Mobile Toggle Button */
@@ -103,6 +124,11 @@ button#menuToggle {
 }
 button#menuToggle:hover {
   color: #cbd5e1;
+<<<<<<< HEAD
+=======
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
 }
 
 /* Hide your main UL on small devices if you’re using a toggle-based approach */
@@ -129,6 +155,10 @@ button#menuToggle:hover {
   background-color: #f8fafc;
   padding: 4rem 2rem;
   text-align: center;
+<<<<<<< HEAD
+=======
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
 }
 
 .hero h2 {
@@ -155,6 +185,10 @@ button#menuToggle:hover {
 
 .hero a.btn:hover {
   background-color: #1d4ed8;
+<<<<<<< HEAD
+=======
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
 }
 
 /* Section Styling */
@@ -175,9 +209,16 @@ li {
 footer {
   text-align: center;
   font-size: 0.875rem;
+<<<<<<< HEAD
   color: #64748b;
   padding: 2rem 0;
   border-top: 1px solid #e2e8f0;
+=======
+  padding: 2rem 0;
+  border-top: 1px solid #e2e8f0;
+  background: linear-gradient(90deg, #1e293b, #334155);
+  color: #e2e8f0;
+>>>>>>> 1155b94889a5b2e8a1ccbf82f9dfd887e32b6af2
 }
 
 /* Dark Mode */
