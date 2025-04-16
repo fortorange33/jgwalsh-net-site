@@ -1,0 +1,15 @@
+title: James Gregory Walsh
+markdown: kramdown
+theme: minima
+permalink: pretty
+
+# Ensure static assets get copied
+include:
+  - assets
+  - _pages
+  - _site
+
+# Disable default layouts if you're custom-building pages
+exclude:
+  - node_modules
+  - vendor
