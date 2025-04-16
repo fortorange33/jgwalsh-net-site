@@ -1,4 +1,4 @@
-git add /Users/j.gregorywalsh/Documents/GitHub/jgwalsh-net-site/index.html]<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -9,26 +9,26 @@ git add /Users/j.gregorywalsh/Documents/GitHub/jgwalsh-net-site/index.html]<!DOC
   <title>James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio</title>
 
   <!-- Favicon and Apple Touch Icons -->
-  <link rel="icon" href="assets/Favicons/favicon.ico" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/Favicons/favicon-32.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/Favicons/favicon-180-precomposed.png" />
-  <link rel="manifest" href="assets/Favicons/manifest.webmanifest" />
+  <link rel="icon" href="/assets/Favicons/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/Favicons/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/Favicons/favicon-180-precomposed.png" />
+  <link rel="manifest" href="/assets/Favicons/manifest.webmanifest" />
 
   <!-- Open Graph Meta Tags -->
   <meta property="og:title" content="James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio" />
   <meta property="og:description" content="Showcasing my background in psychology, data analysis, and law enforcement readiness." />
-  <meta property="og:image" content="assets/images/portfolio-og.jpg" />
+  <meta property="og:image" content="/assets/images/portfolio-og.jpg" />
   <meta property="og:url" content="https://www.jgwalsh.net" />
 
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="James Gregory Walsh – Psychology-Informed Law Enforcement Portfolio" />
   <meta name="twitter:description" content="Showcasing my background in psychology, data analysis, and law enforcement readiness." />
-  <meta name="twitter:image" content="assets/images/portfolio-og.jpg" />
+  <meta name="twitter:image" content="/assets/images/portfolio-og.jpg" />
 
   <!-- Tailwind CSS -->
-  <link rel="stylesheet" href="assets/css/tailwind.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="/assets/css/tailwind.min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
   
   <!-- Fonts -->
   <link
@@ -137,6 +137,6 @@ git add /Users/j.gregorywalsh/Documents/GitHub/jgwalsh-net-site/index.html]<!DOC
   </footer>
 
   <!-- Scripts -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>
