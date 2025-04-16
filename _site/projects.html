@@ -8,14 +8,21 @@
     <button id="menuToggle" class="sm:hidden text-white text-2xl ml-auto focus:outline-none" aria-label="Toggle menu">☰</button>
   </div>
 
-  <!-- Mobile Menu -->
-  <nav id="mobileMenu" class="sm:hidden hidden px-4 pb-4 text-sm font-medium font-sans">
-    <ul class="space-y-2 text-center">
+  <!-- Unified Navigation -->
+  <nav class="w-full">
+    <ul id="mobileMenu" class="sm:hidden hidden px-4 pb-4 text-sm font-medium font-sans space-y-2 text-center">
       <li><a href="/" class="block hover:text-blue-300">Home</a></li>
       <li><a href="/about" class="block hover:text-blue-300">About</a></li>
       <li><a href="/experience" class="block hover:text-blue-300">Experience</a></li>
       <li><a href="/projects" class="block hover:text-blue-300">Projects</a></li>
       <li><a href="/contact" class="block hover:text-blue-300">Contact</a></li>
+    </ul>
+    <ul class="hidden sm:flex gap-6 text-sm font-medium font-sans justify-end pr-4">
+      <li><a href="/" class="hover:text-blue-300">Home</a></li>
+      <li><a href="/about" class="hover:text-blue-300">About</a></li>
+      <li><a href="/experience" class="hover:text-blue-300">Experience</a></li>
+      <li><a href="/projects" class="hover:text-blue-300">Projects</a></li>
+      <li><a href="/contact" class="hover:text-blue-300">Contact</a></li>
     </ul>
   </nav>
 </header>
