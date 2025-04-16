@@ -1,6 +1,6 @@
 title: James Gregory Walsh
 markdown: kramdown
-theme: minima
+# theme: minima
 permalink: pretty
 
 # Ensure static assets get copied
